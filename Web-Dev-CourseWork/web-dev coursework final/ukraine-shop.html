@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="ukraine-shop.css" />
+  <link rel="stylesheet" href="NavBar.css" />
+  <script src="ukraine-shop.js" async></script>
+  <title>Donations</title>
+</head>
+
+<body>
+  <div class="topnav">
+    <a href="HomePage.html">Home</a>
+    <a class="active" href="ukraine-shop.html">Products</a>
+    <a href="additionalcontent.html">Additional Content</a>
+    <a href="index.html">Presentation</a>
+    <a href="sitemap.html">Sitemap</a>
+    <a href="QueryFormV2.html">Contact Us</a>
+    <a href="thumbnail-images.html">Thumbnails</a>
+    <a href="#">Quiz</a>
+  </div>
+  
+  	<div class="logo">
+		<a data-href="#" data-src="MyProjcet.jpg"></a>
+	</div> 
+  
+  <h1>Ukraine Humanitarian Appeal</h1>
+
+  <div class="text">
+    Ukraine is facing a humantarian crisis and urgently needs your help. Support
+    Ukraine by making a donation and receiving a Ukranian themed item in return.
+    100% of monies received are donated directly to charities providing aid in
+    Ukraine.
+  </div>
+
+  <!--second section showing products available for purchase-->
+  <div class="container">
+    <div class="product" id="product1">
+      <img
+        src="flag1.jpg"
+        class="imgSize"
+        id="flagImg"
+        alt="picture of Ukraine flag"
+      />
+      <div class="description">
+        Ukraine Flag
+        <div class="price">£10</div>
+      </div>
+    </div>
+
+    <div class="product" id="product2">
+      <img
+        src="bracelet1.jpg"
+        class="imgSize"
+        id="braceletImg"
+        alt="picture of Ukraine bracelet"
+      />
+      <div class="description">
+        Ukraine Bracelet
+        <div class="price">£25</div>
+      </div>
+    </div>
+
+    <div class="product" id="product3">
+      <img
+        src="shirt1.jpg"
+        class="imgSize"
+        id="shirtImg"
+        alt="picture of Ukraine shirt"
+      />
+      <div class="description">
+        Ukraine Shirt
+        <div class="price">£50</div>
+      </div>
+    </div>
+
+    <!--third section showing products and quantites-->
+
+    <form name="checkout" onsubmit="return false">
+      <div class="checkout-header">
+        <span class="checkout-column checkout-header">PRODUCT</span>
+        <span class="checkout-column checkout-header">COST</span>
+        <span class="checkout-column checkout-header">QUANTITY</span>
+      </div>
+
+      <div class="checkout-rows">
+        <span class="checkout-title">Ukraine Flag</span>
+        <span class="checkout-price" value="10">£10</span>
+        <input
+          class="checkout-quantity"
+          type="number"
+          onchange="updateQuantity()"
+          value="0"
+          min="0"
+        />
+      </div>
+
+      <div class="checkout-rows">
+        <span class="checkout-title">Ukraine Bracelet</span>
+        <span class="checkout-price" value="25">£25</span>
+        <input
+          class="checkout-quantity"
+          type="number"
+          onchange="updateQuantity()"
+          value="0"
+          min="0"
+        />
+      </div>
+
+      <div class="checkout-rows">
+        <span class="checkout-title">Ukraine T-shirt</span>
+        <span class="checkout-price" value="50">£50</span>
+        <input
+          class="checkout-quantity"
+          type="number"
+          onchange="updateQuantity()"
+          value="0"
+          min="0"
+        />
+      </div>
+
+      <div class="cart-total">
+        <span class="checkout-total-title">Total £</span>
+
+        <span class="checkout-total-price" id="sum">0</span>
+      </div>
+
+      <!--forth section showing name and email boxes, as well as printing the invoice-->
+
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" />
+      </div>
+      <button
+        class="purchase-button"
+        onclick="validate(); printOrder(); return false;"
+      >
+        PURCHASE
+      </button>
+    </form>
+
+    <h3>Order invoice:</h3>
+    <div id="display"></div>
+  </div>
+</body>

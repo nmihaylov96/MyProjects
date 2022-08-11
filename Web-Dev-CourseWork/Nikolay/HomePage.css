@@ -1,0 +1,48 @@
+.logo {
+	background-image: url("MyProject.jpg");
+	height: 100px;
+	width: 300px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	left: 620px;
+	margin: 10px;
+}
+
+.controlMap {
+	background-image: url("controlMap.png");
+	height: 600px;
+	width: 850px;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	margin:10px;
+}
+
+.map {
+	background-image: url("map.png");
+	height: 600px;
+	width: 850px;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	margin: 10px;
+}
+
+.text {
+	text-align: center;
+	
+}
+
+.textRight {
+	text-align: left;
+	float:right;
+	margin-left:auto;
+	margin-right:auto;
+	width: 40em;
+}
+
+h3 {
+	text-align:center;
+}
