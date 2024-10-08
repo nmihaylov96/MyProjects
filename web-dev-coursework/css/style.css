@@ -1,0 +1,57 @@
+.logo {
+	background-image: url("MyProject.jpg");
+	height: 100px;
+	width: 300px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	left: 300px;
+	margin: 10px;
+}
+
+
+ body{
+            background-image:url('bg.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+
+        }
+        .container{
+                width: 60%;
+    margin-left: 20%;
+    border: solid 2px #333;
+    padding: 20px;
+    background-color: #ffffffd6;
+    border-radius: 30px;
+        }
+        .btn{
+            padding: 6px;
+            border-radius: 3px;
+        }
+        #timer-div{
+            padding: 20px;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: white;
+            color: #222;
+        }
+        #timer{
+            padding: 0px;
+            margin: 0px;
+        }
+        #popup{
+            position: fixed;
+            width: 30%;
+            left: 35%;
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border: solid 2px #444;
+            top: 20%;
+            display: none;
+        }
+        form{
+            padding-left:50px ;
+        }

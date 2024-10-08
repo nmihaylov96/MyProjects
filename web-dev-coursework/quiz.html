@@ -1,0 +1,99 @@
+<html lang="en-US" style="height:100%">
+<head>
+    <meta charset="utf-8">
+    <title>Quiz</title>
+    <script type="application/javascript" src="js/quiz.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body style="font-size:160%;">
+    <div id="timer-div">
+        <h1 id="timer">60</h1>
+    </div>
+    <div class="container">
+	
+	<div class="logo">
+		<a data-href="#" data-src="MyProjcet.jpg"></a>
+	</div> 
+	
+        <h1 align="center">Quiz</h1>
+        <hr>
+    <form name="myform" action="" method="post">
+        <strong>What is the capital city of Ukraine? </strong><br>
+        <input type="radio" name="q1" value="a">Odesa<br>
+        <input type="radio" name="q1" value="b">Kharkiv<br>
+        <input type="radio" name="q1" value="c">Kyiv<br>
+        <input type="radio" name="q1" value="d">None of these<br><br>
+    
+        <strong>What colour(s) is/are in the Ukrainan Flag? </strong><br>
+        <input type="radio" name="q2" value="a">Blue & yellow<br>
+        <input type="radio" name="q2" value="b">Green<br>
+        <input type="radio" name="q2" value="c">Red & White<br>
+        <input type="radio" name="q2" value="d">Dark Blue and white<br><br>
+    
+        <strong>What is the Surface of Ukraine? </strong><br>
+        <input type="radio" name="q3" value="a">88,566 km²<br>
+        <input type="radio" name="q3" value="b">850,250 km²<br>
+        <input type="radio" name="q3" value="c">56,755 km²<br>
+        <input type="radio" name="q3" value="d">603,548 km²<br><br>
+    
+        <strong>What is the most dominant religion in Ukraine?</strong><br>
+        <input type="radio" name="q4" value="a">Christian<br>
+        <input type="radio" name="q4" value="b">Catholic<br>
+        <input type="radio" name="q4" value="c">Orthodox<br>
+        <input type="radio" name="q4" value="d">Protestant<br><br>
+    
+        <strong>What is the amount of the pupulation in Ukraine? </strong><br>
+        <input type="radio" name="q5" value="a">55.18 million<br>
+        <input type="radio" name="q5" value="b">65.16 million<br>
+        <input type="radio" name="q5" value="c">44.13 million<br>
+        <input type="radio" name="q5" value="d">64.15 million<br><br>
+    
+        <strong>Who is the president of Ukraine?</strong><br>
+        <input type="radio" name="q6" value="a">Jair Bolsonaro<br>
+        <input type="radio" name="q6" value="b">Volodymyr Zelenskyy<br>
+        <input type="radio" name="q6" value="c">Gustav Heinemann<br>
+        <input type="radio" name="q6" value="d">Walter Scheel<br><br>
+    
+        <strong> In what year was Ukraine founded? </strong><br>
+        <input type="radio" name="q7" value="a">1996<br>
+        <input type="radio" name="q7" value="b">1982<br>
+        <input type="radio" name="q7" value="c">1955<br>
+        <input type="radio" name="q7" value="d">1991<br><br>
+    
+        <strong>Who is the first president of Ukraine?</strong><br>
+        <input type="radio" name="q8" value="a">Viktor Yanukovych<br>
+        <input type="radio" name="q8" value="b">Leonid Kuchma<br>
+        <input type="radio" name="q8" value="c">Viktor Yushchenko<br>
+        <input type="radio" name="q8" value="d">Leonid Kravchuk<br><br>
+    
+        <strong> What country borders Ukraine at North? </strong><br>
+        <input type="radio" name="q9" value="a">Moldova<br>
+        <input type="radio" name="q9" value="b">Poland<br>
+        <input type="radio" name="q9" value="c">Belarus<br>
+        <input type="radio" name="q9" value="d">Slovakia<br><br>
+        
+        <strong>When did the Ukraine and Russia War start?
+</strong><br>
+        <input type="radio" name="q10" value="a">02 March 2022<br>
+        <input type="radio" name="q10" value="b">24 February 2022<br>
+        <input type="radio" name="q10" value="c">10 February 2022<br>
+        <input type="radio" name="q10" value="d">15 January 2022<br><br>
+    
+        <input type="button" class="btn" style="font-size:105%" value="Finish" onclick="finishAttempt()">
+    </form>
+    
+    </div>
+</form>   
+
+
+<div id="popup">
+    <center>Finished in <b id="timeLeft">0</b> Seconds</center>
+    <hr>
+    Total Score : <b id="totalMarks">0</b><br>
+    Correct Answers : <b id="correct">0</b>/10 <br>
+    <a href="quiz.html">Restart</a>
+
+</div> 
+
+</body>
+</html>

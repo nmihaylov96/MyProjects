@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fece0c;
+}
+
+.logo {
+	background-image: url("images/MyProject.jpg");
+	height: 100px;
+	width: 300px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	left: 620px;
+	margin: 10px;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  font-size: 40px;
+  margin: 20px 20px 20px 20px;
+}
+
+.text {
+  color: #333;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40em;
+}
